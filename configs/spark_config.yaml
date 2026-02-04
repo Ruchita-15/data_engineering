@@ -1,0 +1,32 @@
+spark:
+  app:
+    name: data_engineering
+
+  master: local[*]
+
+  executor:
+    memory: 4g
+    cores: 2
+
+  driver:
+    memory: 2g
+
+  sql:
+    shuffle:
+      partitions: 200
+    adaptive:
+      enabled: true
+      coalescePartitions:
+        enabled: true
+    broadcastTimeout: 600
+
+  serializer: org.apache.spark.serializer.KryoSerializer
+
+  network:
+    timeout: 800s
+
+  dynamicAllocation:
+    enabled: false
+
+  speculative:
+    enabled: false

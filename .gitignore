@@ -1,0 +1,75 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-wheel-metadata/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+*.ipynb.meta
+
+# =========================
+# Spark / Big Data Outputs
+# =========================
+data/processed/
+data/raw/*.csv
+*.parquet
+*.snappy.parquet
+_SUCCESS
+*.crc
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Build / Distribution
+# =========================
+build/
+dist/
+*.egg-info/
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
+
+# =========================
+# Java / Spark
+# =========================
+hs_err_pid*
+derby.log
+metastore_db/
+spark-warehouse/
+
+# =========================
+# Temporary / Local
+# =========================
+tmp/
+temp/
